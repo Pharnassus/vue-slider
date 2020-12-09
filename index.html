@@ -17,9 +17,21 @@
   </head>
   <body>
 
+    <div id="vue1">
 
-    <div id="root">
+      <div class="wrapper">
+        <div class="prev">
+          <i class="fas fa-chevron-left" @click="prevImage"></i>
+        </div>
 
+        <div class="slide">
+          <img :src="images[imageIndex]" alt="Muscle car">
+        </div>
+
+        <div class="next">
+          <i class="fas fa-chevron-right " @click="nextImage"></i>
+        </div>
+      </div>
 
     </div>
 
