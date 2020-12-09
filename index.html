@@ -31,6 +31,10 @@
         <div class="next">
           <i class="fas fa-chevron-right " @click="nextImage"></i>
         </div>
+
+        <div class="nav">
+          <i class="fas fa-circle" v-for="(pluto, index) in images" :class="index == imageIndex ? 'active' : ''"></i>          
+        </div>
       </div>
 
     </div>

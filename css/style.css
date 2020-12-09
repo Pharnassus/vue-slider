@@ -10,6 +10,7 @@
 }
 
 .wrapper{
+  position: relative;
   display: flex;
   width: 800px;
   height: 500px;
@@ -41,4 +42,19 @@
   object-fit: cover;
   object-position: center;
   border-radius: 20px;
+}
+
+.nav{
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nav i{
+  cursor: pointer;
+  padding: 5px;
+  margin: 0 15px;
+}
+.active{
+  color: white;
 }
